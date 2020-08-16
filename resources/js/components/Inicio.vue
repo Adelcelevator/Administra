@@ -108,10 +108,10 @@ export default {
                     console.log(error);
                 });
         },
-        borrarL(libro){
+        borrarL(factura){
             let cosas = this;
             if(confirm("Seguro que Desea Eliminar El Libro: "+libro.Titulo)){
-                axios.put('/libro/borrar', {
+                axios.put('/factura/borrar', {
                 idFactura:cosas.idFactura
                 })
                 .then(function (response) {
@@ -139,18 +139,6 @@ export default {
                     console.log(error);
                 });
         },
-        categorias(){
-            let esto = this;
-            axios
-                .get("/categoria")
-                .then(function(response) {
-                    esto.listaCat=response.data;
-                    console.log(esto.listaCat);
-                })
-                .catch(function(error) {
-                    console.log(error);
-                });
-        },
     cerrarModal(){
                 this.modal=0;
                 this.TituloM='';
@@ -165,7 +153,7 @@ export default {
             ,
             abrirModal(modelo,accion,data=[]){
                 switch (modelo) {
-                    case "libro":
+                    case "factura":
                         switch (accion) {
                             case 'nuevo':
                                 this.modal=1;
