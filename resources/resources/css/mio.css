@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/06/2020, 13:28:46
+    Author     : Panchito
+*/
+
+.espacio{
+    padding: 20px !important;
+    align-content: center !important;
+}
+table{
+    text-align: center !important;
+}
+td{
+    padding: 10px;
+}
+.tablaedit{
+    text-align: right !important;
+}
+
+.tablaedit2{
+    text-align: left !important;
+}
